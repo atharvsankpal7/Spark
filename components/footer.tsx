@@ -7,7 +7,7 @@ const FooterComponent = () => {
         <footer className="footer items-center flex p-4 bg-neutral text-neutral-content justify-center bg-slate-900">
             <aside className="items-center flex gap-5 ">
            
-                <img src="https://raw.githubusercontent.com/atharvsankpal7/Spark/master/public/Images/Cesalogo.png?token=GHSAT0AAAAAACNXYCHN2PP57BLJVQS44YKGZPPH2YQ" width={36} height={36} alt="" />
+                <img src="https://raw.githubusercontent.com/atharvsankpal7/Spark/master/public/Images/Cesalogo.png" width={36} height={36} alt="" />
                 <p>
                     Organized by Computer Science Engineering Student
                     Assosication @{" "}
