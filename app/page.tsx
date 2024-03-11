@@ -1,5 +1,6 @@
 import EventContainer from "@/components/EventContainer";
 import HeroSection from "@/components/HeroSection";
+import FooterComponent from "@/components/footer";
 import React from "react";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
             <HeroSection />
             
             <EventContainer />
+            <FooterComponent/>
         </>
     );
 };
