@@ -30,20 +30,36 @@ export default function HeroSection() {
                         </div>
 
                         <div className="flex flex-wrap gap-10 justify-center mt-6 ">
-                            <Link
-                                href="https://drive.usercontent.google.com/u/0/uc?id=1Wq_X8VjIkwtBNzPvJIZwOfy3NS4pIthj&export=download"
-                                target="_"
+                            <button
+                                className="p-[3px] relative z-50"
+                                onClick={() => setModal2Open(true)}
                             >
-                                <button
-                                    className="p-[3px] relative z-50"
-                                    onClick={() => setModal2Open(true)}
+                                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                                <div className="px-2 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                                    Get Broucher
+                                </div>
+                            </button>
+                            <ConfigProvider
+                                theme={{
+                                    algorithm: theme.darkAlgorithm,
+                                }}
+                            >
+                                <Modal
+                                    centered
+                                    open={modal2Open}
+                                    onOk={() => setModal2Open(false)}
+                                    onCancel={() => setModal2Open(false)}
+                                    width="75%"
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                                    <div className="px-2 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-                                        Get Broucher
-                                    </div>
-                                </button>
-                            </Link>
+                                    <Image
+                                        className="m-auto"
+                                        src="/images/spark2k24.png"
+                                        alt="spark2k24"
+                                        width={1000}
+                                        height={500}
+                                    />
+                                </Modal>
+                            </ConfigProvider>
 
                             <Link
                                 href="https://docs.google.com/forms/d/e/1FAIpQLScrVHA5XI8Bmh2VSEQBUg2AcXfb-SmzjccU0xSNLCHaGl2-iQ/viewform"

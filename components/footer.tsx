@@ -7,7 +7,7 @@ const FooterComponent = () => {
         <footer className="footer items-center flex p-4 bg-neutral text-neutral-content justify-between bg-slate-900">
             <aside className="items-center flex gap-5 ">
            
-                <img src="/utils/Images/Cesalogo.png" width={36} height={36} alt="" />
+                <img src="/images/Cesalogo.png" width={36} height={36} alt="" />
                 <p>
                     Organized by Computer Science Engineering Student
                     Assosication @{" "}
