@@ -30,40 +30,20 @@ export default function HeroSection() {
                         </div>
 
                         <div className="flex flex-wrap gap-10 justify-center mt-6 ">
-                            <button
-                                className="p-[3px] relative z-50"
-                                onClick={() => setModal2Open(true)}
+                            <Link
+                                href="https://drive.usercontent.google.com/u/0/uc?id=1Wq_X8VjIkwtBNzPvJIZwOfy3NS4pIthj&export=download"
+                                target="_"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                                <div className="px-2 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-                                    Broucher
-                                </div>
-                            </button>
-                            <ConfigProvider
-                                theme={{
-                                    // 1. Use dark algorithm
-                                    algorithm: theme.darkAlgorithm,
-
-                                    // 2. Combine dark algorithm and compact algorithm
-                                    // algorithm: [theme.darkAlgorithm, theme.compactAlgorithm],
-                                }}
-                            >
-                                <Modal
-                                    title="Spark-2k24 Broucher"
-                                    centered
-                                    open={modal2Open}
-                                    onOk={() => setModal2Open(false)}
-                                    onCancel={() => setModal2Open(false)}
-                                    width="85%"
+                                <button
+                                    className="p-[3px] relative z-50"
+                                    onClick={() => setModal2Open(true)}
                                 >
-                                    <Image
-                                        src="/public/Images/Spark2k24.png"
-                                        width={100}
-                                        height={100}
-                                        alt="Broucher"
-                                    />
-                                </Modal>
-                            </ConfigProvider>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                                    <div className="px-2 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                                        Get Broucher
+                                    </div>
+                                </button>
+                            </Link>
 
                             <Link
                                 href="https://docs.google.com/forms/d/e/1FAIpQLScrVHA5XI8Bmh2VSEQBUg2AcXfb-SmzjccU0xSNLCHaGl2-iQ/viewform"

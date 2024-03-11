@@ -1,9 +1,14 @@
 // next.config.js
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ['cdn.pixabay.com', 'wallpapercave.com','colibriwp.com'], // Add other external hosts if needed
-  },
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "**",
+            },
+        ],
+    },
 };
 
 export default nextConfig;
