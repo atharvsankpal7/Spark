@@ -49,7 +49,8 @@ export default function HeroSection() {
                                     open={modal2Open}
                                     onOk={() => setModal2Open(false)}
                                     onCancel={() => setModal2Open(false)}
-                                    width="75%"
+                                    
+                                    className="sm:w-full w-75"
                                 >
                                     <Image
                                         className="m-auto"

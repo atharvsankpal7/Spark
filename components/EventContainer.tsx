@@ -82,7 +82,7 @@ export default function EventContainer({ event }: any) {
                     visible={modalOpen}
                     onCancel={closeModal}
                     footer={null}
-                    width="50%"
+                    className="sm:w-full w-50"
                 >
                     {selectedEvent && (
                         <EventInfoModelContent event={selectedEvent} />
