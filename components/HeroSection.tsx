@@ -54,7 +54,7 @@ export default function HeroSection() {
                                 >
                                     <Image
                                         className="m-auto"
-                                        src="https://raw.githubusercontent.com/atharvsankpal7/Spark/master/public/Images/Spark2k24.png?token=GHSAT0AAAAAACNXYCHMQNEHLWYNCFI7HXVGZPPH2GA"
+                                        src="https://raw.githubusercontent.com/atharvsankpal7/Spark/master/public/Images/Spark2k24.png"
                                         alt="spark2k24"
                                         width={1000}
                                         height={500}
