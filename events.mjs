@@ -16,7 +16,7 @@ const events = [
                 isTimeBound: true,
             },
         ],
-        entryFee: "60 Rs",
+        entryFee: "50 Rs",
         srcImage: "https://wallpapercave.com/wp/wp8366401.jpg",
         coordinators: [
             {
@@ -38,7 +38,7 @@ const events = [
             presentation: "7-8 minutes",
             qna: "3-4 minutes",
         },
-        entryFee: "Solo: 60 Rs, Duo: 100 Rs",
+        entryFee: "Solo: 50 Rs, Duo: 100 Rs",
         coordinators: [
             {
                 name: "Jagannath Suryawanshi",
@@ -54,10 +54,10 @@ const events = [
         name: "Web Master",
         type: "Technical",
         description:
-            "Are you a coding wizard? Join Web Master and showcase your frontend development skills. You'll be given a topic on the spot, and you have 2 hours to create a stunning website. Entry fee is only Rs. 60.",
+            "Are you a coding wizard? Join Web Master and showcase your frontend development skills. You'll be given a topic on the spot, and you have 2 hours to create a stunning website. Entry fee is only Rs. 50.",
         topicGivenOnSpot: true,
         timeLimit: "2 hrs",
-        entryFee: "60 Rs",
+        entryFee: "50 Rs",
         srcImage:
             "https://colibriwp.com/blog/wp-content/uploads/2018/07/banner-redimensionat.jpg",
         coordinators: [

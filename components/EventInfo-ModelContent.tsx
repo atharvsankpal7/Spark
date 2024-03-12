@@ -2,7 +2,7 @@ import React from "react";
 
 const EventInfoModelContent = ({ event }: any) => {
     return (
-        <div className="container mx-auto max-w-md mt-10 p-6 border-lime-200 border-4 rounded-lg shadow-xl shadow-lime-800">
+        <div className="container mx-auto max-w-md mt-10 p-6 border-lime-200 border-4 rounded-lg shadow-xl shadow-lime-800 sm:max-h-full">
             <img
                 className="w-full h-40 object-cover rounded-md"
                 src={
