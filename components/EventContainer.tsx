@@ -10,25 +10,8 @@ import { Button, Modal, theme } from "antd";
 import EventInfoModelContent from "./EventInfo-ModelContent";
 
 export default function EventContainer({ event }: any) {
-  const [isMobile, setIsMobile] = React.useState(false);
   const [modalOpen, setModalOpen] = React.useState(false);
   const [selectedEvent, setSelectedEvent] = React.useState(null);
-
-  useEffect(() => {
-    // Check window size on resize
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    // Initial check
-    handleResize();
-
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Remove event listener on cleanup
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const openModal = (event: any) => {
     setSelectedEvent(event);
@@ -54,13 +37,9 @@ export default function EventContainer({ event }: any) {
             className="inter-var mx-4 my-3 w-full xlg:w-1/3 xxlg:w-1/4"
           >
             <CardContainer className="hover:cursor-pointer ">
-              {isMobile ? (
-                <EventComponent className="" event={event} />
-              ) : (
-                <BackgroundGradient className="rounded-[22px] p-1 bg-black">
-                  <EventComponent event={event} />
-                </BackgroundGradient>
-              )}
+              <BackgroundGradient className="rounded-[22px] p-1 bg-black">
+                <EventComponent event={event} />
+              </BackgroundGradient>
             </CardContainer>
           </div>
         ))}
@@ -76,13 +55,9 @@ export default function EventContainer({ event }: any) {
             className="inter-var mx-4 my-3 w-full xlg:w-1/3 xxlg:w-1/4  "
           >
             <CardContainer className="hover:cursor-pointer">
-              {isMobile ? (
+              <BackgroundGradient className="rounded-[22px] p-1 bg-black">
                 <EventComponent event={event} />
-              ) : (
-                <BackgroundGradient className="rounded-[22px] p-1 bg-black">
-                  <EventComponent event={event} />
-                </BackgroundGradient>
-              )}
+              </BackgroundGradient>
             </CardContainer>
           </div>
         ))}
