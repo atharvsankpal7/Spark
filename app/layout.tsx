@@ -7,7 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Spark-2k24",
   description: "Ignite the Spark in yourself!!!",
+  
 };
+
 
 export default function RootLayout({
   children,

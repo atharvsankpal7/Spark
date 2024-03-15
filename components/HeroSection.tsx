@@ -6,6 +6,24 @@ import { cn } from "@/utils/cn";
 import { Button, Modal, theme } from "antd";
 import { useState } from "react";
 import { ConfigProvider, Layout } from "antd";
+const handleDownload = () => {
+  // Replace this URL with your actual PDF URL
+  const pdfUrl = "/Spark 2k24 Rulebook.pdf";
+
+  // Create a temporary anchor element
+  const anchor = document.createElement("a");
+  anchor.href = pdfUrl;
+  anchor.download = "rulebook.pdf"; // Optional: Set the downloaded file name
+  anchor.target = "_blank";
+
+  // Programmatically trigger a click event on the anchor
+  document.body.appendChild(anchor);
+  anchor.click();
+
+  // Clean up
+  document.body.removeChild(anchor);
+};
+
 export default function HeroSection() {
   const [modal2Open, setModal2Open] = useState(false);
   return (
@@ -29,13 +47,19 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-10 justify-center mt-6 ">
+            <div className="flex flex-wrap gap-10 justify-center mt-6 sm:text-sm ">
+              <button className="p-[3px] relative z-50" onClick={handleDownload}>
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                <div className="px-2 py-3  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                  Download Rulebook
+                </div>
+              </button>
               <button
                 className="p-[3px] relative z-50"
                 onClick={() => setModal2Open(true)}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                <div className="px-2 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                <div className="px-2 py-3  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
                   Get Broucher
                 </div>
               </button>
