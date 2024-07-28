@@ -1,17 +1,12 @@
-import EventContainer from "@/components/EventContainer";
-import HeroSection from "@/components/HeroSection";
-import FooterComponent from "@/components/footer";
+import HomePage from "@/components/HomePage";
 import React from "react";
 
 const Home = () => {
-    return (
-        <>
-            <HeroSection />
-            
-            <EventContainer />
-            <FooterComponent/>
-        </>
-    );
+  return (
+    <div className="container">
+      <HomePage/>
+    </div>
+  );
 };
 
 export default Home;
